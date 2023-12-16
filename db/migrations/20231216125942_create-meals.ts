@@ -9,6 +9,7 @@ export async function up(knex: Knex): Promise<void> {
     table.datetime("created_at").defaultTo(knex.fn.now()).notNullable();
     table.datetime("update_at").defaultTo(knex.fn.now()).notNullable();
     table.boolean("is_in_the_diet").defaultTo(false).notNullable();
+    table.uuid("user_id").references("users.id").notNullable();
   });
 }
 
