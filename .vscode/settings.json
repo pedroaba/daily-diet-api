@@ -1,0 +1,11 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "daily-diet-api-db",
+      "database": "${workspaceFolder:daily-diet-api}/db/app.db"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}
